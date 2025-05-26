@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap-logo" itemscope="" itemtype="http://schema.org/Organization">
+  <div class="wrap-logo" itemtype="http://schema.org/Organization">
     <a
       href="https://bitis.com.vn"
       itemprop="url"

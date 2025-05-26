@@ -44,90 +44,8 @@
       <ProductList :products="products" />
       <div class="sectionHeading-tab-new">SẢN PHẨM NỔI BẬT</div>
       <ProductList :products="products" />
-      <section class="mainBannerhome section-home">
-        <div class="container">
-          <div class="section-head">
-            <h4>CHÚNG TÔI CÓ GÌ MỚI</h4>
-          </div>
-          <div class="bg-three-banner-home">
-            <div class="row three-branner">
-              <a
-                class="bannerEffect"
-                href="https://bitis.com.vn/collections/giay-the-thao-bitis-hunter-tennis"
-                aria-label="Banner 1"
-              >
-                <NuxtImg
-                  class="lazyload dt-width-100 bigloaded"
-                  width="403"
-                  height="217"
-                  src="/images/banner_giaytennis.webp"
-                  data-src="/images/banner_giaytennis.webp"
-                  alt=""
-                />
-              </a>
-              <a
-                class="bannerEffect"
-                href="https://bitis.com.vn/collections/giay-tay-nam"
-                aria-label="Banner 2"
-              >
-                <NuxtImg
-                  class="lazyload dt-width-100 bigloaded"
-                  width="403"
-                  height="217"
-                  src="/images/banner_giaytay.webp"
-                  data-src="/images/banner_giaytay.webp"
-                  alt=""
-                />
-              </a>
-              <a
-                class="bannerEffect"
-                href="https://bitis.com.vn/collections/sandal-tre-em-bitis-gau-chu-tam"
-                aria-label="Banner 3"
-              >
-                <NuxtImg
-                  class="lazyload dt-width-100 bigloaded"
-                  width="403"
-                  height="217"
-                  src="/images/banner_gauchuatam_510x275.webp"
-                  data-src="/images/banner_gauchuatam_510x275.webp"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="banner-home-bottom section-home text-center">
-        <a
-          href="https://bitis.com.vn/collections/dep-tre-em-disney"
-          class="bannerEffect"
-          aria-label="banner bottom"
-        >
-          <NuxtImg
-            class="dt-width-100 lazyload bigloaded"
-            width="1950"
-            height="750"
-            src="/images/banner_stitch_.webp"
-            alt=""
-            data-src="/images/banner_stitch_.webp"
-            data-mobile="//file.hstatic.net/1000230642/file/banner_stitch__grande.webp"
-          />
-        </a>
-      </section>
-
-      <section class="blog-home section-home styleOwl">
-        <div class="container">
-          <div class="section-heading-tab d-flex align-items-center">
-            <h3>TIN TỨC BITIS</h3>
-          </div>
-          <div class="section-content">
-            <BlogSlider />
-          </div>
-        </div>
-      </section>
-
-      <SectionAddress />
-      <SectionNewsLetter />
+      <SectionNewProducts />
+      <SectionBanner1 />
       <SectionGallery />
     </main>
     <Footer />
@@ -138,10 +56,14 @@
 import TopBar from "~/components/TopBar.vue";
 import Header from "~/components/Header.vue";
 import ProductList from "~/components/ProductList.vue";
+import SectionHome from "~/pages/layouts/SectionNewProducts.vue";
 import SectionAddress from "~/pages/layouts/SectionAddress.vue";
 import SectionNewsLetter from "~/pages/layouts/SectionNewsLetter.vue";
 import SectionGallery from "~/pages/layouts/SectionGallery.vue";
 import Footer from "~/pages/layouts/Footer.vue";
+import SectionNewProducts from "~/pages/layouts/SectionNewProducts.vue";
+import SectionBanner1 from "./layouts/SectionBanner1.vue";
+import SectionBlog from "./layouts/SectionBlog.vue";
 
 const products = [
   {
@@ -226,6 +148,7 @@ const products = [
 .sectionHeading-tab-new.hasBanner {
   display: block;
   padding-top: calc(100% * 750 / 1920);
+  width: 100%;
   position: relative;
   transition: none;
   background: #f7f8f9;

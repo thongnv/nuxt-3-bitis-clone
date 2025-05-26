@@ -58,12 +58,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import TopBar from "./TopBar.vue";
-import Logo from "./Logo.vue";
-import CartIcon from "./CartIcon.vue";
-</script>
-
 <style scoped>
 .navbar-mainmenu {
   width: 100%;
