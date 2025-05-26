@@ -1,4 +1,4 @@
-Lighthouse scores
+Lighthouse scores (Desktop)
 
-<img width="570" alt="image" src="https://github.com/user-attachments/assets/15ff17d8-75d7-4b8e-b834-d05a45b91180" />
+<img width="665" alt="image" src="https://github.com/user-attachments/assets/eef04c8f-f8dc-4467-ac3c-debe4c6d8277" />
 
